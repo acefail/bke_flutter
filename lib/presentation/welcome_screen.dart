@@ -34,44 +34,46 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 .paddingSymmetric(horizontal: 32),
             16.height,
             Container(
-                child: Text('I am new',
-                        style: boldTextStyle(size: 18, color: Colors.white))
-                    .center(),
-                width: context.width(),
-                margin: EdgeInsets.symmetric(horizontal: 32),
-                padding: EdgeInsets.symmetric(vertical: 8, horizontal: 32),
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [
-                      Color.fromARGB(255, 89, 132, 252),
-                      Color.fromARGB(255, 151, 72, 255),
-                    ],
-                    begin: Alignment.centerLeft,
-                    end: Alignment.centerRight,
-                  ),
-                  borderRadius: radius(32),
-                )).onTap(() {
+                    width: context.width(),
+                    margin: EdgeInsets.symmetric(horizontal: 32),
+                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 32),
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [
+                          Color.fromARGB(255, 89, 132, 252),
+                          Color.fromARGB(255, 151, 72, 255),
+                        ],
+                        begin: Alignment.centerLeft,
+                        end: Alignment.centerRight,
+                      ),
+                      borderRadius: radius(32),
+                    ),
+                    child: Text('I am new',
+                            style: boldTextStyle(size: 18, color: Colors.white))
+                        .center())
+                .onTap(() {
               WalkThroughScreen().launch(context);
             }),
             16.height,
             Container(
-                child: Text('I\'ve been here',
-                        style: boldTextStyle(size: 18, color: Colors.white))
-                    .center(),
-                width: context.width(),
-                padding: EdgeInsets.symmetric(vertical: 8, horizontal: 32),
-                margin: EdgeInsets.symmetric(horizontal: 32),
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [
-                      Color.fromARGB(255, 151, 72, 255),
-                      Color.fromARGB(255, 89, 132, 252),
-                    ],
-                    begin: Alignment.centerLeft,
-                    end: Alignment.centerRight,
-                  ),
-                  borderRadius: radius(32),
-                )).onTap(() {
+                    width: context.width(),
+                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 32),
+                    margin: EdgeInsets.symmetric(horizontal: 32),
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [
+                          Color.fromARGB(255, 151, 72, 255),
+                          Color.fromARGB(255, 89, 132, 252),
+                        ],
+                        begin: Alignment.centerLeft,
+                        end: Alignment.centerRight,
+                      ),
+                      borderRadius: radius(32),
+                    ),
+                    child: Text('I\'ve been here',
+                            style: boldTextStyle(size: 18, color: Colors.white))
+                        .center())
+                .onTap(() {
               LoginScreen().launch(context);
             }),
             50.height,

@@ -17,9 +17,9 @@ class WalkThroughComponentOne extends StatelessWidget {
                 fontFamily: GoogleFonts.playfairDisplay().fontFamily)),
         12.height,
         SizedBox(
+          width: context.width() / 1.5,
           child: Text('Discover wonderful Courses and Contents.',
               style: secondaryTextStyle(size: 16, color: rcSecondaryTextColor)),
-          width: context.width() / 1.5,
         ),
         16.height,
         SizedBox(
@@ -92,9 +92,9 @@ class WalkThroughComponentTwo extends StatelessWidget {
             .paddingOnly(left: 16),
         12.height,
         SizedBox(
+          width: context.width() / 1.5,
           child: Text('With our selective Tests and Quiz.',
               style: secondaryTextStyle(size: 16, color: rcSecondaryTextColor)),
-          width: context.width() / 1.5,
         ).paddingOnly(left: 16),
         SizedBox(
           height: 450,
@@ -155,19 +155,19 @@ class WalkThroughComponentThree extends StatelessWidget {
                 fontFamily: GoogleFonts.playfairDisplay().fontFamily)),
         12.height,
         SizedBox(
+            width: context.width() / 1.5,
             child: Text('Get your evaluation with our stat-of-the-art tech.',
                 style:
-                    secondaryTextStyle(size: 16, color: rcSecondaryTextColor)),
-            width: context.width() / 1.5),
+                    secondaryTextStyle(size: 16, color: rcSecondaryTextColor))),
         50.height,
         Container(
-                child: Text('Get Started',
-                        style: boldTextStyle(size: 18, color: Colors.white))
-                    .center(),
                 width: context.width() - 40,
                 padding: EdgeInsets.symmetric(vertical: 8),
                 decoration: BoxDecoration(
-                    borderRadius: radius(32), color: primaryColor))
+                    borderRadius: radius(32), color: primaryColor),
+                child: Text('Get Started',
+                        style: boldTextStyle(size: 18, color: Colors.white))
+                    .center())
             .onTap(() {
           LoginScreen().launch(context);
         }),
